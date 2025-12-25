@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TR-104 Mern Stack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4d1a36;
+      --secondary: #b6c1a3;
+      --light: #f9fafb;
+      --dark: #1c1c1c;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--white);
+      padding: 18px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.07);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      color: var(--primary);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, var(--primary), #2f6d47);
+      padding: 90px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      color: var(--white);
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 280px;
+      margin-right: 40px;
+    }
+
+    .hero-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 44px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      max-width: 520px;
+    }
+
+    .hero-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-img img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    /* SECTION */
+    .section {
+      padding: 80px 60px;
+      background: var(--white);
+    }
+
+    .section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 30px;
+      margin-bottom: 40px;
+      text-align: center;
+      color: var(--primary);
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .card {
+      background: var(--light);
+      padding: 25px;
+      border-radius: 14px;
+      width: 290px;
+      text-align: center;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-weight: 500;
+      color: var(--dark);
+    }
+
+    /* UPLOAD SECTION */
+    .upload-section {
+      background: var(--secondary);
+      padding: 80px 60px;
+      text-align: center;
+      color: var(--dark);
+    }
+
+    .upload-section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .upload-section p {
+      margin-bottom: 25px;
+      font-size: 17px;
+    }
+
+    .upload-section a.button {
+      background: var(--primary);
+      color: var(--white);
+      padding: 12px 26px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      margin: 10px;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+
+    .upload-section a.button:hover {
+      background: #38142a;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      padding: 40px 50px;
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    footer .social {
+      margin-top: 15px;
+    }
+
+    footer .social a {
+      margin: 0 8px;
+      color: #aaa;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    footer .social a:hover {
+      color: var(--white);
+    }
+
+    @media(max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-text {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TR-103 | GNDEC</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="daily-task.html">Daily Task</a>
+      <a href="daily-diary.html">Daily Diary</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Mern Stack</h2>
+      <p>Welcome to TR-104, a professional training program by Guru Nanak Dev Engineering College designed to equip you with prompt engineering excellence and practical skills.</p>
+    </div>
+    <div class="hero-img">
+      <img src="images/image1.jpg" alt="Hero Image">
+    </div>
+  </section>
+
+
+
+  <section class="upload-section" id="diary">
+    <h3>Explore More</h3>
+    <p>View detailed task submissions and upload daily diary PDFs on the following pages.</p>
+    <a href="daily-task.html" class="button">Go to Daily Task Page</a>
+    <a href="daily-diary.html" class="button">Go to Daily Diary Page</a>
+  </section>
+
+  <footer>
+    &copy; 2025 TR-103 | Guru Nanak Dev Engineering College. All rights reserved.
+    <div class="social">
+      <a href="#">🌐</a>
+      <a href="#">🔗</a>
+      <a href="#">📧</a>
+    </div>
+  </footer>
+</body>
+</html>

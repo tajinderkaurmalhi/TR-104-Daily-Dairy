@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Task - TR-104 Mern Stack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #6c3d64, #a76c8e);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      color: #fff;
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #e4e4e4;
+    }
+    .hero {
+      background: #f0f4ea;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      color: #2f4f2f;
+    }
+    .hero p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .task-section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .task-section h3 {
+      font-size: 1.7rem;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #4f2f40;
+      font-family: 'Playfair Display', serif;
+    }
+    .task-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 25px;
+    }
+    .task-entry {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .task-entry:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+    .task-entry a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 18px;
+      background: linear-gradient(135deg, #6c3d5b, #8d5277);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .task-entry a:hover {
+      background: linear-gradient(135deg, #522d47, #744061);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TR-103 Prompt Training</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="daily-task.html">Daily Task</a>
+      <a href="daily-diary.html">Daily Diary</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Daily Tasks</h2>
+    <p>Complete and review your daily assignments to track your learning journey.</p>
+  </div>
+
+  <section class="task-section">
+    <h3>Daily Task Links</h3>
+    <div class="task-grid">
+      <!-- Day 1 to Day 14 -->
+      <div class="task-entry"><a href="https://github.com/tajinderkaurmalhi/Mern-Stack.git" target="_blank">Student Task Tacker</a></div>
+      <div class="task-entry"><a href="https://github.com/tajinderkaurmalhi/to-do-list.git" target="_blank">To-Do List</a></div>
+
+
+      <div class="task-entry"><a href="./images/" target="_blank">Final project work - View code</a></div>
+    </div>
+  </section>
+</body>
+</html>

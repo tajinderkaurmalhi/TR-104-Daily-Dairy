@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Diary - TR-104 Mern Stack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --green: #b37c88;
+      --light-green: #eaf2e1;
+      --white: #ffffff;
+      --dark: #1e2a1f;
+      --gray: #666;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--white);
+      color: var(--dark);
+    }
+
+    header {
+      background: var(--green);
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      color: var(--white);
+      font-size: 24px;
+      margin: 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f0f0f0;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--light-green), #fdfdfd);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4em;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: var(--gray);
+    }
+
+    .upload-section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .upload-section h3 {
+      font-size: 1.8em;
+      text-align: center;
+      margin-bottom: 40px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .diary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .diary-entry {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .diary-entry:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    }
+
+    .diary-entry a {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 18px;
+      background: var(--green);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .diary-entry a:hover {
+      background: #95637d;
+    }
+
+    .gallery {
+      padding: 60px 20px;
+      background-color: var(--light-green);
+      text-align: center;
+    }
+    .gallery h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8em;
+      margin-bottom: 25px;
+    }
+    .gallery-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .gallery-images img {
+      width: 220px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .gallery-images img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: var(--dark);
+      color: var(--white);
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TR-103 Prompt Training</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="daily-task.html">Daily Task</a>
+      <a href="daily-diary.html">Daily Diary</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Upload Your Daily Diaries</h2>
+    <p>Keep track of your learning journey by uploading daily reflections. Access all diary entries below.</p>
+  </div>
+
+  <section class="upload-section">
+    <h3>Daily Upload Links</h3>
+    <div class="diary-grid">
+<div class="diary-entry"><a href="pdfs/day1.pdf" target="_blank">Day 1 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day2.pdf" target="_blank">Day 2 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day3.pdf" target="_blank">Day 3 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day4.pdf" target="_blank">Day 4 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day5.pdf" target="_blank">Day 5 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day6.pdf" target="_blank">Day 6 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day7.pdf" target="_blank">Day 7 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day8.pdf" target="_blank">Day 8 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day9.pdf" target="_blank">Day 9 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day10.pdf" target="_blank">Day 10 - View PDF</a></div>
+
+<div class="diary-entry"><a href="pdfs/day11.pdf" target="_blank">Day 11 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day12.pdf" target="_blank">Day 12 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day13.pdf" target="_blank">Day 13 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day14.pdf" target="_blank">Day 14 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day15.pdf" target="_blank">Day 15 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day16.pdf" target="_blank">Day 16 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day17.pdf" target="_blank">Day 17 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day18.pdf" target="_blank">Day 18 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day19.pdf" target="_blank">Day 19 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day20.pdf" target="_blank">Day 20 - View PDF</a></div>
+
+<div class="diary-entry"><a href="pdfs/day21.pdf" target="_blank">Day 21 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day22.pdf" target="_blank">Day 22 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day23.pdf" target="_blank">Day 23 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day24.pdf" target="_blank">Day 24 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day25.pdf" target="_blank">Day 25 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day26.pdf" target="_blank">Day 26 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day27.pdf" target="_blank">Day 27 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day28.pdf" target="_blank">Day 28 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day29.pdf" target="_blank">Day 29 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day30.pdf" target="_blank">Day 30 - View PDF</a></div>
+
+<div class="diary-entry"><a href="pdfs/day31.pdf" target="_blank">Day 31 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day32.pdf" target="_blank">Day 32 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day33.pdf" target="_blank">Day 33 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day34.pdf" target="_blank">Day 34 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day35.pdf" target="_blank">Day 35 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day36.pdf" target="_blank">Day 36 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day37.pdf" target="_blank">Day 37 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day38.pdf" target="_blank">Day 38 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day39.pdf" target="_blank">Day 39 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day40.pdf" target="_blank">Day 40 - View PDF</a></div>
+
+<div class="diary-entry"><a href="pdfs/day41.pdf" target="_blank">Day 41 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day42.pdf" target="_blank">Day 42 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day43.pdf" target="_blank">Day 43 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day44.pdf" target="_blank">Day 44 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day45.pdf" target="_blank">Day 45 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day46.pdf" target="_blank">Day 46 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day47.pdf" target="_blank">Day 47 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day48.pdf" target="_blank">Day 48 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day49.pdf" target="_blank">Day 49 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day50.pdf" target="_blank">Day 50 - View PDF</a></div>
+
+<div class="diary-entry"><a href="pdfs/day51.pdf" target="_blank">Day 51 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day52.pdf" target="_blank">Day 52 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day53.pdf" target="_blank">Day 53 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day54.pdf" target="_blank">Day 54 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day55.pdf" target="_blank">Day 55 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day56.pdf" target="_blank">Day 56 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day57.pdf" target="_blank">Day 57 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day58.pdf" target="_blank">Day 58 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day59.pdf" target="_blank">Day 59 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day60.pdf" target="_blank">Day 60 - View PDF</a></div>
+
+<div class="diary-entry"><a href="pdfs/day61.pdf" target="_blank">Day 61 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day62.pdf" target="_blank">Day 62 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day63.pdf" target="_blank">Day 63 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day64.pdf" target="_blank">Day 64 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day65.pdf" target="_blank">Day 65 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day66.pdf" target="_blank">Day 66 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day67.pdf" target="_blank">Day 67 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day68.pdf" target="_blank">Day 68 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day69.pdf" target="_blank">Day 69 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day70.pdf" target="_blank">Day 70 - View PDF</a></div>
+
+<div class="diary-entry"><a href="pdfs/day71.pdf" target="_blank">Day 71 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day72.pdf" target="_blank">Day 72 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day73.pdf" target="_blank">Day 73 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day74.pdf" target="_blank">Day 74 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day75.pdf" target="_blank">Day 75 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day76.pdf" target="_blank">Day 76 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day77.pdf" target="_blank">Day 77 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day78.pdf" target="_blank">Day 78 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day79.pdf" target="_blank">Day 79 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day80.pdf" target="_blank">Day 80 - View PDF</a></div>
+
+<div class="diary-entry"><a href="pdfs/day81.pdf" target="_blank">Day 81 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day82.pdf" target="_blank">Day 82 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day83.pdf" target="_blank">Day 83 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day84.pdf" target="_blank">Day 84 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day85.pdf" target="_blank">Day 85 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day86.pdf" target="_blank">Day 86 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day87.pdf" target="_blank">Day 87 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day88.pdf" target="_blank">Day 88 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day89.pdf" target="_blank">Day 89 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day90.pdf" target="_blank">Day 90 - View PDF</a></div>
+
+<div class="diary-entry"><a href="pdfs/day91.pdf" target="_blank">Day 91 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day92.pdf" target="_blank">Day 92 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day93.pdf" target="_blank">Day 93 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day94.pdf" target="_blank">Day 94 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day95.pdf" target="_blank">Day 95 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day96.pdf" target="_blank">Day 96 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day97.pdf" target="_blank">Day 97 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day98.pdf" target="_blank">Day 98 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day99.pdf" target="_blank">Day 99 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day100.pdf" target="_blank">Day 100 - View PDF</a></div>
+
+<div class="diary-entry"><a href="pdfs/day101.pdf" target="_blank">Day 101 - View PDF</a></div>
+<div class="diary-entry"><a href="pdfs/day102.pdf" target="_blank">Day 102 - View PDF</a></div>
+
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h3>Memories Captured</h3>
+    <div class="gallery-images">
+      <img src="images/image2.jpg" alt="Memory 1"/>
+      <img src="images/image4.jpg" alt="Memory 2"/>
+      <img src="images/image5.jpg" alt="Memory 3"/>
+      <img src="images/image6.jpg" alt="Memory 4"/>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 TR-103 Prompt Engineering | Guru Nanak Dev Engineering College
+  </footer>
+</body>
+</html>
